@@ -1,0 +1,246 @@
+/* single image block */
+.single-image-block {
+    display: flex;
+    justify-content: center;
+}
+
+.single-image-block img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* image left and text right block */
+.image-left-text-right-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.image-left-text-right-block img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 200px;
+    max-height: 370px;
+
+    object-fit: contain;
+}
+
+.image-left-text-right-block p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .image-left-text-right-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* image right and text left block */
+.image-right-text-left-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.image-right-text-left-block img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 200px;
+    max-height: 370px;
+
+    object-fit: contain;
+}
+
+.image-right-text-left-block p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .image-right-text-left-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* text left block */
+.text-left-block p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+/* text middle block */
+.text-middle-block p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* text right block */
+.text-right-block p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+}
+
+/* left youtube block */
+.left-youtube-video-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+@media screen and (max-width: 600px) {
+    .left-youtube-video-link iframe {
+        width: 100%;
+    }
+}
+
+/* middle youtube block */
+.middle-youtube-video-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .middle-youtube-video-link iframe {
+        width: 100%;
+    }
+}
+
+/* right youtube block */
+.right-youtube-video-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+@media screen and (max-width: 600px) {
+    .right-youtube-video-link iframe {
+        width: 100%;
+    }
+}
+
+/* youtube left and text left block */
+.youtube-left-text-right-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.youtube-left-text-right-block iframe {
+    width: 100%;
+    
+
+    min-height: 250px;
+    max-height: 370px;
+
+    object-fit: cover;
+}
+
+.youtube-left-text-right-block p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .youtube-left-text-right-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* youtube right and text right block */
+.youtube-right-text-left-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.youtube-right-text-left-block iframe {
+    width: 100%;
+  
+    min-height: 250px;
+    max-height: 370px;
+
+    object-fit: cover;
+}
+
+.youtube-right-text-left-block p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .youtube-right-text-left-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* left title block */
+.left-title-block h2 {
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+/* middle title block */
+.middle-title-block h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* right title block */
+.right-title-block h2 {
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+/* image gallery block */
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+}
+
+
+.image-gallery img {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* left sub title block */
+.left-sub-title-block h3 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+/* middle sub title block */
+.middle-sub-title-block h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* right sub title block */
+.right-sub-title-block h3 {
+    text-align: right;
+    font-size: 2rem;
+}
+
+/* 2x2 image grid block */
+._2x2-image-grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+gap:8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+._2x2-image-grid img {
+    width: 100%;
+}
