@@ -20,6 +20,7 @@ p a {
 html, body {
     overflow-x: hidden;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -274,4 +275,20 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+}
+
+/* Scroll to top */
+#scrollToTopButton {
+    width: 40px;
+
+    position: fixed;
+    right: 20px;
+    bottom: -60px;
+
+    transition: var(--default-animation-time) ease-out;
+}
+
+#scrollToTopButton img {
+    width: 100%;
+    height: 100%;
 }

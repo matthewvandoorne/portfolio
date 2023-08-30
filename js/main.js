@@ -13,7 +13,25 @@ menuToggle.addEventListener('click', function() {
         html.style.overflowY = 'hidden';
         body.style.overflowY = 'hidden';
     } else {
-        html.style.overflowY = 'auto';
-        body.style.overflowY = 'auto';
+        html.style.overflowY = 'unset';
+        body.style.overflowY = 'unset';
     }
 });
+
+// Back to top button
+let backToTopButton = document.getElementById('scrollToTopButton');
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    backToTopButton.style.bottom = "20px";
+  } else {
+    backToTopButton.style.bottom = "-60px";
+  }
+}
+
+backToTopButton.addEventListener('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
