@@ -6,5 +6,10 @@ let body = document.querySelector('body');
 
 menuToggle.addEventListener('click', function() {
     menuState.click();
-    body.style.overflowY = "hidden";
+
+    if (menuState.checked) {
+        body.style.overflowY = 'hidden';
+    } else {
+        body.style.overflowY = 'auto';
+    }
 });
