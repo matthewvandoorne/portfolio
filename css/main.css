@@ -17,6 +17,11 @@ p a {
     text-decoration: underline;
 }
 
+html, body {
+    overflow-x: hidden;
+    position: relative;
+}
+
 body {
     box-sizing: border-box;
     background-color: var(--off-black);
@@ -25,8 +30,6 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-
-    overflow-x: hidden;
 }
 
 main {
@@ -206,7 +209,8 @@ h1, h2, h3 {
         left: 100%;
         top: 0;
         width: 100vw;
-        height: 100vh;
+        height: 120vh;
+        margin-top: -10vh;
         background-color: #222222;
 
         display: flex;
@@ -248,7 +252,7 @@ h1, h2, h3 {
     }
 
     .mobile-nav input[type="checkbox"]:checked ~ .menu-items {
-        left: 0%;
+        left: -15.5%;
     }
 }
 
